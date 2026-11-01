@@ -1,0 +1,10 @@
+@@ -1,8 +0,0 @@
+-package com.demo;
+-
+-public class Obsolete {
+-
+-    public int unused() {
+-        return 42;
+-    }
+-}
+\ No newline at end of file

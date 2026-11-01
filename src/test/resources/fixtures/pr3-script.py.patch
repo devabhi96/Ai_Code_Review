@@ -1,0 +1,6 @@
+@@ -0,0 +1,4 @@
++import os
++
++def read_file(path):
++    return open(path).read()
+\ No newline at end of file
