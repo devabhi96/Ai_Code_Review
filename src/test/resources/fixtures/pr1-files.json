@@ -1,0 +1,14 @@
+[
+  {
+    "sha": "51735fb381f6fadafdafb90a6d4dc0b90162f1de",
+    "filename": "src/main/java/com/demo/UserRepository.java",
+    "status": "modified",
+    "additions": 13,
+    "deletions": 1,
+    "changes": 14,
+    "blob_url": "https://github.com/devabhi96/webhook-practice/blob/4c73eff5aaf781bc51debf1852ff883df71b9c49/src%2Fmain%2Fjava%2Fcom%2Fdemo%2FUserRepository.java",
+    "raw_url": "https://github.com/devabhi96/webhook-practice/raw/4c73eff5aaf781bc51debf1852ff883df71b9c49/src%2Fmain%2Fjava%2Fcom%2Fdemo%2FUserRepository.java",
+    "contents_url": "https://api.github.com/repos/devabhi96/webhook-practice/contents/src%2Fmain%2Fjava%2Fcom%2Fdemo%2FUserRepository.java?ref=4c73eff5aaf781bc51debf1852ff883df71b9c49",
+    "patch": "@@ -13,6 +13,14 @@ public UserRepository(Connection connection) {\n         this.connection = connection;\n     }\n \n+    public String findByName(String name) throws SQLException {\n+        String sql = \"SELECT name FROM users WHERE name = '\" + name + \"'\";\n+        try (java.sql.Statement st = connection.createStatement();\n+             ResultSet rs = st.executeQuery(sql)) {\n+            return rs.next() ? rs.getString(\"name\") : null;\n+        }\n+    }\n+\n     public String findName(long id) throws SQLException {\n         String sql = \"SELECT name FROM users WHERE id = ?\";\n         try (PreparedStatement ps = connection.prepareStatement(sql)) {\n@@ -39,4 +47,8 @@ public void deleteUser(long id) throws SQLException {\n             ps.executeUpdate();\n         }\n     }\n-}\n\\ No newline at end of file\n+\n+    public String displayName(long id) throws SQLException {\n+        String name = findName(id);\n+        return name.trim().toUpperCase();\n+    }}\n\\ No newline at end of file"
+  }
+]

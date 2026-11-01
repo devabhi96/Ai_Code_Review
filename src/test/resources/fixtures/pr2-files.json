@@ -1,0 +1,38 @@
+[
+  {
+    "sha": "b437676b0b69749e011e1353750ee9638acde8c1",
+    "filename": "logo.png",
+    "status": "added",
+    "additions": 0,
+    "deletions": 0,
+    "changes": 0,
+    "blob_url": "https://github.com/devabhi96/webhook-practice/blob/d393628e15d4ed2fe5e13b10043ac7b4f82d9266/logo.png",
+    "raw_url": "https://github.com/devabhi96/webhook-practice/raw/d393628e15d4ed2fe5e13b10043ac7b4f82d9266/logo.png",
+    "contents_url": "https://api.github.com/repos/devabhi96/webhook-practice/contents/logo.png?ref=d393628e15d4ed2fe5e13b10043ac7b4f82d9266"
+  },
+  {
+    "sha": "17a05f1c5add2218f747c84664dfa96bc3937fa7",
+    "filename": "src/main/java/com/demo/NewName.java",
+    "status": "renamed",
+    "additions": 1,
+    "deletions": 1,
+    "changes": 2,
+    "blob_url": "https://github.com/devabhi96/webhook-practice/blob/d393628e15d4ed2fe5e13b10043ac7b4f82d9266/src%2Fmain%2Fjava%2Fcom%2Fdemo%2FNewName.java",
+    "raw_url": "https://github.com/devabhi96/webhook-practice/raw/d393628e15d4ed2fe5e13b10043ac7b4f82d9266/src%2Fmain%2Fjava%2Fcom%2Fdemo%2FNewName.java",
+    "contents_url": "https://api.github.com/repos/devabhi96/webhook-practice/contents/src%2Fmain%2Fjava%2Fcom%2Fdemo%2FNewName.java?ref=d393628e15d4ed2fe5e13b10043ac7b4f82d9266",
+    "patch": "@@ -3,6 +3,6 @@\n public class OldName {\n \n     public String greet() {\n-        return \"hello\";\n+        return \"hi\";\n     }\n }\n\\ No newline at end of file",
+    "previous_filename": "src/main/java/com/demo/OldName.java"
+  },
+  {
+    "sha": "e6d5e72f434d96f167c5c9d83cc81eab3f7f89b2",
+    "filename": "src/main/java/com/demo/Obsolete.java",
+    "status": "removed",
+    "additions": 0,
+    "deletions": 8,
+    "changes": 8,
+    "blob_url": "https://github.com/devabhi96/webhook-practice/blob/d4694bec68eb223186af345ee55b8309837a2a22/src%2Fmain%2Fjava%2Fcom%2Fdemo%2FObsolete.java",
+    "raw_url": "https://github.com/devabhi96/webhook-practice/raw/d4694bec68eb223186af345ee55b8309837a2a22/src%2Fmain%2Fjava%2Fcom%2Fdemo%2FObsolete.java",
+    "contents_url": "https://api.github.com/repos/devabhi96/webhook-practice/contents/src%2Fmain%2Fjava%2Fcom%2Fdemo%2FObsolete.java?ref=d4694bec68eb223186af345ee55b8309837a2a22",
+    "patch": "@@ -1,8 +0,0 @@\n-package com.demo;\n-\n-public class Obsolete {\n-\n-    public int unused() {\n-        return 42;\n-    }\n-}\n\\ No newline at end of file"
+  }
+]
